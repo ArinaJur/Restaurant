@@ -1,6 +1,4 @@
-import static utils.PrintUtils.CommonPrintMethods.*;
-import static utils.PrintUtils.PrintSpaces.*;
-import static utils.PrintUtils.PrintTitles.*;
+import static utils.PrintUtils.*;
 
 public class Menu {
     final MainDish beef = new MainDish("Beef Wellington", 13.00);
