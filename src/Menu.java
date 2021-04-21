@@ -20,26 +20,26 @@ public class Menu {
     Side[] sides = new Side[]{rice, asparagus, beens, potato};
     Drink[] drinks = new Drink[]{water, wineWhite, wineRed, juiceApple};
 
-    public String[] getMainDishesNames() {
-        String[] mainDishesNames = new String[mainDishes.length];
-        for (int i = 0; i < mainDishes.length; i++) {
-            mainDishesNames[i] = mainDishes[i].getMainDishName();
-        }
-        return mainDishesNames;
-    }
-
-    public MainDish getBeef() {
-        return beef;
-    }
-
-
-    public double[] getMainDishesPrices() {
-        double[] mainDishesPrices = new double[mainDishes.length];
-        for (int i = 0; i < mainDishes.length; i++) {
-            mainDishesPrices[i] = mainDishes[i].getMainDishPrice();
-        }
-        return mainDishesPrices;
-    }
+//    public String[] getMainDishesNames() {
+//        String[] mainDishesNames = new String[mainDishes.length];
+//        for (int i = 0; i < mainDishes.length; i++) {
+//            mainDishesNames[i] = mainDishes[i].getDishName();
+//        }
+//        return mainDishesNames;
+//    }
+//
+//    public MainDish getBeef() {
+//        return beef;
+//    }
+//
+//
+//    public double[] getMainDishesPrices() {
+//        double[] mainDishesPrices = new double[mainDishes.length];
+//        for (int i = 0; i < mainDishes.length; i++) {
+//            mainDishesPrices[i] = mainDishes[i].getMainDishPrice();
+//        }
+//        return mainDishesPrices;
+//    }
 
     public String[] getSidesNames() {
         String[] sidesNames = new String[sides.length];
@@ -73,51 +73,51 @@ public class Menu {
         return drinksPrices;
     }
 
-    String[] mainDishesNames = getMainDishesNames();
-    double[] mainDishesPrices = getMainDishesPrices();
+//    String[] mainDishesNames = getMainDishesNames();
+//    double[] mainDishesPrices = getMainDishesPrices();
 
-    private void printMainDishes() {
-        printMainDishesTitle();
-        for(int i = 0; i < mainDishesNames.length; i++) {
-            print(mainDishesNames[i]);
-            printSpacesAfterName(spacesAfterName(mainDishesNames, getSidesNames(),
-                    getDrinksNames(), mainDishesNames[i]));
-            printPrice(mainDishesPrices[i]);
-            println();
-        }
-        println();
-    }
+//    private void printMainDishes() {
+//        printMainDishesTitle();
+//        for(int i = 0; i < mainDishesNames.length; i++) {
+//            print(mainDishesNames[i]);
+//            printSpacesAfterName(spacesAfterName(mainDishesNames, getSidesNames(),
+//                    getDrinksNames(), mainDishesNames[i]));
+//            printPrice(mainDishesPrices[i]);
+//            println();
+//        }
+//        println();
+//    }
+//
+//    private void printSides() {
+//        printSidesTitle();
+//        for(int i = 0; i < getSidesNames().length; i++) {
+//            print(getSidesNames()[i]);
+//            printSpacesAfterName(spacesAfterName(mainDishesNames, getSidesNames(),
+//                    getDrinksNames(), getSidesNames()[i]));
+//            printPrice(getSidesPrices()[i]);
+//            println();
+//        }
+//        println();
+//    }
 
-    private void printSides() {
-        printSidesTitle();
-        for(int i = 0; i < getSidesNames().length; i++) {
-            print(getSidesNames()[i]);
-            printSpacesAfterName(spacesAfterName(mainDishesNames, getSidesNames(),
-                    getDrinksNames(), getSidesNames()[i]));
-            printPrice(getSidesPrices()[i]);
-            println();
-        }
-        println();
-    }
-
-    private void printDrinks() {
-        printDrinksTitle();
-        for(int i = 0; i < getDrinksNames().length; i++) {
-            print(getDrinksNames()[i]);
-            printSpacesAfterName(spacesAfterName(mainDishesNames, getSidesNames(),
-                    getDrinksNames(), getDrinksNames()[i]));
-            printPrice(getDrinksPrices()[i]);
-            println();
-        }
-        println();
-    }
-
-    public void printMenu() {
-        printMenuTitle();
-        printMainDishes();
-        printSides();
-        printDrinks();
-        println();
-        printLine();
-    }
+//    private void printDrinks() {
+//        printDrinksTitle();
+//        for(int i = 0; i < getDrinksNames().length; i++) {
+//            print(getDrinksNames()[i]);
+//            printSpacesAfterName(spacesAfterName(mainDishesNames, getSidesNames(),
+//                    getDrinksNames(), getDrinksNames()[i]));
+//            printPrice(getDrinksPrices()[i]);
+//            println();
+//        }
+//        println();
+//    }
+//
+//    public void printMenu() {
+//        printMenuTitle();
+//        printMainDishes();
+//        printSides();
+//        printDrinks();
+//        println();
+//        printLine();
+//    }
 }
