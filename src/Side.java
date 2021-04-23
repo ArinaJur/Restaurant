@@ -2,6 +2,7 @@ public class Side {
 
     private String sideName;
     private double sidePrice;
+    private String bla;
 
     Side(String name, double price) {
         this.sideName = name;
